@@ -1,0 +1,20 @@
+DESCRIPTION:
+Simple pong game that I am creating. Will add the a couple features from the to-dos list I have below.
+
+CONTROLS:
+Player 1 uses "w" for going up and "s" for going down 
+
+Player 2 uses the up arrow keys for moving up and down arrow keys for moving down
+
+OBJECTIVE:
+The objective of pong is simple: try to get the ball to the other side of your opponents and to prevent the ball going through to your side. Once the ball goes through the opponent's side a point is awarded to you
+
+HOW TO MAKE THIS WORK:
+As long as you have love 0.9.1 installed on your computer,
+create a zip file with all the contents of this game and rename the .zip to .love and then you should be
+able to play
+
+
+TO-DOS:
+Finish game(obviously)
+Make sound at startup state at launch of game
