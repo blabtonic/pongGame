@@ -17,29 +17,23 @@ function spawn_ball()
 end  
 
 function love.update(dt) -- will create actions
+  --player 1
   if love.keyboard.isDown("w") then
-    position_p1 = position_p1 - 3
-    if position_p1 < 0 then 
-      position_p1 = 0 --prevents p1 from going offscreen(up)
-    end 
+    position_p1 = position_p1 - 5
+    if position_p1 < 0 then position_p1 = 0 end
   elseif love.keyboard.isDown("s") then
-    position_p1 = position_p1 + 3
-    if position_p1 > love.window.getHeight() then -- prevents p1 from going offscreen(down)
-      position_p1 = love.window.getHeight() 
-    end 
-  end
+    position_p1 = position_p1 + 5
+    if position_p1 + 100 > love.window.getHeight() then position_p1 = love.window.getHeight()-60 end
+  end  
   
+  -- player 2
   if love.keyboard.isDown("up") then
-    position_p2 = position_p2 - 3
-    if position_p2 < 0 then --prevents p1 from going offscreen(up)
-      position_p2 = 0 
-    end 
-  elseif love.keyboard.isDown("down")then
-    position_p2 = position_p2 + 3
-    if position_p2 > love.window.getHeight() then -- prevents p2 from going offscreen(down)
-      position_p2 = love.window.getHeight() 
-    end 
-  end
+    position_p2 = position_p2 - 5
+    if position_p2 < 0 then position_p2 = 0 end
+  elseif love.keyboard.isDown("down") then
+    position_p2 = position_p2 + 5
+    if position_p2 + 100 > love.window.getHeight() then position_p2 = love.window.getHeight()-60 end
+  end  
 end  
 
 function love.draw() -- this will draw sprites and score
