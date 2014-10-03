@@ -13,7 +13,7 @@ function spawn_ball()
     math.random(0, love.window.getHeight())
   }
   
-  spawn_area = math.random(1,2)
+  ball_direction = math.random(1,2)
 end  
 
 function love.update(dt) -- will create actions
